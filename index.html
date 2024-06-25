@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FSM Designer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="fsmCanvas" width="800" height="600"></canvas>
+    <div id="controls">
+        <input type="text" id="inputString" placeholder="Enter string to validate">
+        <button onclick="validateString()">Validate</button>
+        <button onclick="resetDiagram()">Reset Diagram</button> <!-- Nuevo botón -->
+    </div>
+    <div id="instructions">
+        <h2>Instrucciones de Uso</h2>
+        <p>
+            - Doble clic en el canvas para agregar un estado.<br>
+            - Shift + arrastrar para crear una transición entre estados.<br>
+            - Clic derecho en un estado para marcarlo o desmarcarlo como estado de aceptación (solo puede haber un estado de aceptación).<br>
+            - Ingresa una cadena en el campo de texto y presiona "Validate" para verificar si la cadena es aceptada por el autómata.<br>
+            - Arrastra un estado para moverlo.<br>
+            - Mantén presionada la tecla "Suprimir" y haz clic en un estado o transición para eliminarlo.<br>
+            - Presiona "Reset Diagram" para borrar todo el diagrama y empezar de nuevo.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
